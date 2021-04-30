@@ -2,6 +2,7 @@ import React from "react";
 
 import { Titulo } from "../Titulo";
 import { Conta } from "../Conta";
+import { Extrato } from "../Extrato";
 
 import styled from "styled-components";
 
@@ -11,6 +12,7 @@ export const Container = () => {
       <Titulo>Olá Fulano!</Titulo>
       <Conteudo>
         <Conta />
+        <Extrato />
       </Conteudo>
     </DivContainer>
   );
@@ -30,6 +32,4 @@ const Conteudo = styled.section`
   @media (max-width: 800px) {
     flex-direction: column;
   }
-}
-
 `;
